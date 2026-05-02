@@ -70,7 +70,7 @@ It's a static site — drop the contents of `site/` onto any host:
 | Sign in / Sign up CTAs | `https://focusforge.in` (the actual app) |
 | Footer "App" link | `https://focusforge.in` |
 | Footer "itathya" link | `https://itathya.com` |
-| Contact | `mailto:hello@itathya.com` |
+| Contact | `mailto:support@itathya.com` |
 | `/privacy`, `/terms` | placeholders — add those pages later |
 
 If `focusforge.in` ever moves under `itathya.com/app` or similar, search-and-replace `https://focusforge.in` in `index.html`.
