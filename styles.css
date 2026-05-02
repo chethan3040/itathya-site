@@ -1065,3 +1065,366 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ───────────────────────────────────────────────
+   itathya homepage (parent brand)
+   Slightly quieter than Focus Forge: smaller hero,
+   more space, neutral mark.
+   ─────────────────────────────────────────────── */
+
+.brand-itathya {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  font-size: 18px;
+}
+
+.brand-itathya-mark {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--ember), #C97816);
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(245, 165, 36, 0.22);
+}
+
+.brand-itathya-mark.sm {
+  width: 22px;
+  height: 22px;
+  font-size: 11px;
+  border-radius: 5px;
+}
+
+.brand-itathya-text {
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+/* Back-to-itathya pill on Focus Forge nav */
+.back-to-itathya {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  padding: 5px 11px;
+  border-radius: 99px;
+  border: 1px solid var(--line);
+  margin-left: 14px;
+  font-weight: 600;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.back-to-itathya:hover {
+  color: var(--text);
+  border-color: var(--line-2);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Hero */
+.ita-hero {
+  padding: 96px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ita-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.55;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse at top, black 0%, transparent 70%);
+  mask-image: radial-gradient(ellipse at top, black 0%, transparent 70%);
+}
+
+.ita-hero::after {
+  content: "";
+  position: absolute;
+  top: -240px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 165, 36, 0.12), transparent 65%);
+  pointer-events: none;
+}
+
+.ita-hero-inner {
+  position: relative;
+  text-align: center;
+  max-width: 820px;
+}
+
+.ita-hero .ita-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 99px;
+  background: var(--ember-dim);
+  color: var(--ember);
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid rgba(245, 165, 36, 0.25);
+  margin-bottom: 28px;
+}
+
+.ita-hero .ita-tag .pulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ember);
+  animation: pulse 1.6s infinite;
+}
+
+.ita-hero h1 {
+  font-size: clamp(40px, 6vw, 76px);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1;
+  margin: 0 0 24px;
+}
+
+.ita-hero p.lead {
+  font-size: 18px;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin: 0 auto 36px;
+  max-width: 580px;
+  font-weight: 500;
+}
+
+.ita-hero .hero-actions {
+  justify-content: center;
+}
+
+/* Apps section */
+.ita-apps {
+  padding: 100px 0;
+}
+
+.ita-app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.ita-app-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 32px;
+  border-radius: 20px;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s, background 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.ita-app-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(245, 165, 36, 0.3);
+  background: linear-gradient(135deg, rgba(245, 165, 36, 0.04), var(--ink-2));
+}
+
+.ita-app-card.live::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--ember), transparent);
+  opacity: 0.6;
+}
+
+.ita-app-card.soon {
+  background: rgba(255, 255, 255, 0.015);
+  border-style: dashed;
+  opacity: 0.85;
+}
+
+.ita-app-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ita-app-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--ember), #C97816);
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  box-shadow: 0 2px 10px rgba(245, 165, 36, 0.25);
+}
+
+.ita-app-mark.soon {
+  background: var(--ink-3);
+  color: var(--text-mute);
+  box-shadow: none;
+  border: 1px solid var(--line);
+  font-size: 18px;
+}
+
+.ita-app-name {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  flex: 1;
+}
+
+.ita-app-status {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.ita-app-status.live {
+  color: var(--ok);
+  background: rgba(22, 163, 74, 0.12);
+  border: 1px solid rgba(22, 163, 74, 0.3);
+}
+
+.ita-app-status.soon {
+  color: var(--text-mute);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+}
+
+.ita-app-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin: 4px 0 0;
+  line-height: 1.15;
+}
+
+.ita-app-card p {
+  font-size: 14.5px;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.ita-app-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--text-mute);
+  margin-top: 4px;
+}
+
+.ita-app-meta .dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.ita-app-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ember);
+  letter-spacing: -0.01em;
+}
+
+.ita-app-cta .arrow {
+  transition: transform 0.2s;
+}
+
+a.ita-app-card:hover .ita-app-cta .arrow {
+  transform: translateX(3px);
+}
+
+.ita-app-cta.muted {
+  color: var(--text-mute);
+}
+
+.ita-app-cta.muted a {
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1px;
+}
+
+.ita-app-cta.muted a:hover {
+  color: var(--ember);
+  border-color: var(--ember);
+}
+
+/* About section */
+.ita-about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.ita-about-block {
+  padding: 28px;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.ita-about-num {
+  font-size: 13px;
+  color: var(--ember);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+
+.ita-about-block h3 {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 0 0 8px;
+}
+
+.ita-about-block p {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .ita-app-grid { grid-template-columns: 1fr; }
+  .ita-about-grid { grid-template-columns: 1fr; }
+  .ita-hero { padding: 64px 0 60px; }
+  .ita-apps { padding: 70px 0; }
+  .back-to-itathya { display: none; }
+}
+

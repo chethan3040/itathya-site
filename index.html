@@ -2,325 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Focus Forge — Focus is forged, not found.</title>
+  <title>itathya — apps for people who take their work seriously</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="The study planner for students who treat focus like a craft. Pomodoro sessions, an AI coach that learns your peak hours, 55 achievements, and a streak you'll actually defend. A product by itathya." />
+  <meta name="description" content="itathya is a startup that builds focused, opinionated apps. Tools that respect your time and attention." />
   <meta name="theme-color" content="#0E1117" />
 
-  <!-- Canonical + Open Graph (itathya.com) -->
   <link rel="canonical" href="https://itathya.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://itathya.com/" />
-  <meta property="og:title" content="Focus Forge — Focus is forged, not found." />
-  <meta property="og:description" content="The study planner for students who treat focus like a craft." />
-  <meta property="og:site_name" content="Focus Forge by itathya" />
+  <meta property="og:title" content="itathya — apps for people who take their work seriously" />
+  <meta property="og:description" content="A startup building focused, opinionated apps." />
+  <meta property="og:site_name" content="itathya" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Focus Forge — Focus is forged, not found." />
-  <meta name="twitter:description" content="The study planner for students who treat focus like a craft." />
+  <meta name="twitter:title" content="itathya" />
+  <meta name="twitter:description" content="A startup building focused, opinionated apps." />
 
-  <!-- Favicon: anvil + spark mark -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230E1117'/><path d='M16 4 L18.4 7.8 L16 11.6 L13.6 7.8 Z' fill='%23F5A524'/><path d='M3.5 16.5 L6 14.5 L8.5 14 L26 14 L26 17.5 L8.5 17.5 L3.5 17.5 Z' fill='%23F2F1ED'/><path d='M11.5 17.5 L20.5 17.5 L19.5 22 L12.5 22 Z' fill='%23F2F1ED'/><path d='M7.5 22 L24.5 22 L26.5 26.5 L5.5 26.5 Z' fill='%23F2F1ED'/></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230E1117'/><text x='16' y='22' font-family='Inter,sans-serif' font-size='18' font-weight='800' fill='%23F5A524' text-anchor='middle'>i</text></svg>" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
-<body>
+<body class="ita">
 
   <!-- ═══ NAV ═══ -->
   <nav class="top">
     <div class="wrap nav-inner">
-      <a href="#" class="brand" aria-label="Focus Forge home">
-        <span class="brand-mark" aria-hidden="true">F</span>
-        <span>Focus<span class="brand-accent">Forge</span></span>
+      <a href="/" class="brand brand-itathya" aria-label="itathya home">
+        <span class="brand-itathya-mark" aria-hidden="true">·</span>
+        <span class="brand-itathya-text">itathya</span>
       </a>
       <div class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#how">How it works</a>
-        <a href="#stats">Results</a>
-        <a href="#faq">FAQ</a>
+        <a href="#apps">Apps</a>
+        <a href="#about">About</a>
+        <a href="mailto:hello@itathya.com">Contact</a>
       </div>
       <div class="nav-cta">
-        <a href="https://focusforge.in" class="btn btn-sm">Sign in</a>
-        <a href="https://focusforge.in" class="btn btn-sm primary">Sign up free</a>
+        <a href="#apps" class="btn btn-sm primary">Browse apps</a>
       </div>
     </div>
   </nav>
 
   <!-- ═══ HERO ═══ -->
-  <header class="hero">
-    <div class="wrap hero-inner">
-      <div>
-        <div class="hero-tag"><span class="pulse" aria-hidden="true"></span> NEW · v2.0 release · April 2026</div>
-        <h1>Focus is forged,<br/>not <span class="accent">found.</span></h1>
-        <p class="lead">
-          The study planner for students who treat focus like a craft. Pomodoro sessions, an AI coach that learns your peak hours, 55 achievements, and a streak you'll actually defend.
-        </p>
-        <div class="hero-actions">
-          <a href="https://focusforge.in" class="btn primary lg">Start forging — it's free <span class="arrow" aria-hidden="true">→</span></a>
-          <a href="#how" class="btn lg">How it works</a>
-        </div>
-        <div class="hero-meta">
-          <span><b>50,000+</b> students</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span><b>4.8</b> rating</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span>Free forever</span>
-        </div>
-      </div>
-
-      <div class="hero-shot-wrap">
-        <div class="hero-shot" role="img" aria-label="Focus Forge dashboard preview">
-          <div class="hero-shot-top"><span></span><span></span><span></span></div>
-          <div class="hero-shot-body">
-            <div class="hs-row">
-              <div>
-                <div class="hs-title">Good morning, Maya<span class="accent">.</span></div>
-                <div class="hs-sub">3 sessions queued · ~2h 10m to your daily goal</div>
-              </div>
-              <div class="hs-start-pill">▶ Start session</div>
-            </div>
-
-            <div class="hs-burn">
-              <div class="label-mono hs-burn-label">TODAY'S BURN · 06:00 → 23:00</div>
-              <div class="hs-burn-h">You've forged <b>1h 42m</b> · Currently in <b>Organic Chem</b></div>
-              <div class="hs-strip" id="hsstrip"></div>
-            </div>
-
-            <div class="hs-stats">
-              <div class="hs-stat"><div class="hs-stat-lbl">Forged</div><div class="hs-stat-val mono">1h 42m</div><div class="hs-stat-delta ok mono">+18m</div></div>
-              <div class="hs-stat"><div class="hs-stat-lbl">XP wk</div><div class="hs-stat-val mono">2,840</div><div class="hs-stat-delta ok mono">▲ 12%</div></div>
-              <div class="hs-stat"><div class="hs-stat-lbl">Streak</div><div class="hs-stat-val mono">27d</div><div class="hs-stat-delta ember mono">PR</div></div>
-              <div class="hs-stat"><div class="hs-stat-lbl">Focus</div><div class="hs-stat-val mono">88%</div><div class="hs-stat-delta ok mono">+4 pts</div></div>
-            </div>
-
-            <div class="hs-list">
-              <div class="hs-task done"><div class="hs-task-dot"></div><div><div class="hs-task-title">Calc III — Sec 12.3</div><div class="hs-task-meta">finished 9:14 · 42m</div></div><div class="hs-task-xp mono">+150</div></div>
-              <div class="hs-task active"><div class="hs-task-dot"></div><div><div class="hs-task-title">Organic Chem · ch.4</div><div class="hs-task-meta">14m left · 62%</div></div><div class="hs-task-xp mono">▶ live</div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-float streak" aria-hidden="true">
-          <span class="ic">🔥</span>
-          <div>
-            <div class="num mono">27</div>
-            <div class="lbl">Day streak</div>
-          </div>
-        </div>
-        <div class="hero-float xp" aria-hidden="true">
-          <div class="ic">⚡</div>
-          <div>
-            <div class="lbl">Earned today</div>
-            <div class="num mono">+340 XP</div>
-          </div>
-        </div>
+  <header class="ita-hero">
+    <div class="wrap ita-hero-inner">
+      <div class="ita-tag"><span class="pulse" aria-hidden="true"></span> A startup · est. 2026</div>
+      <h1>Apps for people<br/>who take their work <span class="accent">seriously.</span></h1>
+      <p class="lead">
+        itathya builds focused, opinionated software. No bloat, no dark patterns &mdash; just tools that respect your time and attention.
+      </p>
+      <div class="hero-actions">
+        <a href="#apps" class="btn primary lg">See our apps <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a href="#about" class="btn lg">About us</a>
       </div>
     </div>
   </header>
 
-  <!-- ═══ TRUSTED ═══ -->
-  <div class="trusted">
-    <div class="wrap trusted-inner">
-      <div class="trusted-label">Trusted by students at</div>
-      <div class="trusted-logos">
-        <span>Stanford</span>
-        <span>UC Berkeley</span>
-        <span>NYU</span>
-        <span>UCLA</span>
-        <span>Cornell</span>
-        <span>Michigan</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══ FEATURES ═══ -->
-  <section id="features">
+  <!-- ═══ APPS ═══ -->
+  <section id="apps" class="ita-apps">
     <div class="wrap">
       <div class="sec-head">
-        <span class="label-mono sec-eyebrow">What's inside</span>
-        <h2>Built for the work,<br/>not the <span class="accent">aesthetic.</span></h2>
-        <p>Every feature exists to keep you in the chair. No gimmicks, no fluff — just the tools that move the needle on your actual study habits.</p>
+        <span class="label-mono sec-eyebrow">Our apps</span>
+        <h2>What we ship.</h2>
+        <p>One product at a time, built with care. More on the way.</p>
       </div>
 
-      <div class="features">
-        <div class="feat tall">
-          <div class="feat-ic" aria-hidden="true">⏱</div>
-          <h3>Anvil Pomodoro</h3>
-          <p>The session as metaphor. A heat-bar fills as your minutes accumulate, sparks fly when the forge is hot. You'll feel the work compounding.</p>
-          <div class="feat-mock">
-            <div class="feat-anvil-stage">
-              <div class="feat-timer-num mono">17:42</div>
-              <div class="feat-timer-state mono">HEATING UP · 62%</div>
-              <svg viewBox="0 0 400 240" aria-hidden="true">
-                <defs>
-                  <linearGradient id="heat" x1="0" y1="0" x2="1" y2="0">
-                    <stop offset="0%" stop-color="#3B82F6"/>
-                    <stop offset="40%" stop-color="#F5A524"/>
-                    <stop offset="80%" stop-color="#FF6B35"/>
-                    <stop offset="100%" stop-color="#FFE2A3"/>
-                  </linearGradient>
-                </defs>
-                <polygon points="80,150 320,150 290,180 110,180" fill="#1F242E" stroke="#3A4150" stroke-width="1.5"/>
-                <rect x="160" y="180" width="80" height="30" fill="#1F242E" stroke="#3A4150" stroke-width="1.5"/>
-                <polygon points="100,210 300,210 320,235 80,235" fill="#1F242E" stroke="#3A4150" stroke-width="1.5"/>
-                <rect x="100" y="158" width="200" height="14" rx="3" fill="rgba(255,255,255,0.06)"/>
-                <rect x="100" y="158" width="124" height="14" rx="3" fill="url(#heat)"/>
-                <circle cx="200" cy="130" r="3" fill="#F5A524" class="spark s1"/>
-                <circle cx="180" cy="110" r="2" fill="#F5A524" class="spark s2"/>
-                <circle cx="220" cy="100" r="4" fill="#F5A524" class="spark s3"/>
-                <circle cx="240" cy="122" r="2" fill="#F5A524" class="spark s4"/>
-                <circle cx="160" cy="124" r="2.5" fill="#F5A524" class="spark s5"/>
-              </svg>
-            </div>
+      <div class="ita-app-grid">
+
+        <a href="/apps/focusforge" class="ita-app-card live">
+          <div class="ita-app-head">
+            <span class="ita-app-mark">F</span>
+            <span class="ita-app-name">Focus<span class="brand-accent">Forge</span></span>
+            <span class="ita-app-status live">LIVE</span>
+          </div>
+          <h3>Focus is forged, not found.</h3>
+          <p>The study planner for students who treat focus like a craft. Pomodoro sessions, an AI coach that learns your peak hours, 55 achievements, and a streak you'll actually defend.</p>
+          <div class="ita-app-meta">
+            <span class="mono">50K+ students</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span class="mono">4.8&#9733;</span>
+          </div>
+          <div class="ita-app-cta">Learn more <span class="arrow" aria-hidden="true">&rarr;</span></div>
+        </a>
+
+        <div class="ita-app-card soon" aria-label="More coming soon">
+          <div class="ita-app-head">
+            <span class="ita-app-mark soon">&middot;</span>
+            <span class="ita-app-name">Untitled #2</span>
+            <span class="ita-app-status soon">SOON</span>
+          </div>
+          <h3>The next thing.</h3>
+          <p>We're heads-down on the next product. Want to be first to know when it ships? Drop us a line.</p>
+          <div class="ita-app-cta muted">
+            <a href="mailto:hello@itathya.com">hello@itathya.com</a>
           </div>
         </div>
 
-        <div class="feat">
-          <div class="feat-ic arc" aria-hidden="true">🧠</div>
-          <h3>AI coach that knows your hours</h3>
-          <p>It learns when you actually focus and schedules your hardest work there. Not at 9am because that's "best practice."</p>
-          <div class="feat-mock feat-coach">
-            <div class="feat-coach-msg">
-              <span class="who mono">EMBER · MORNING</span>
-              You hit 88% focus before noon. Lock in <b>Calc III</b> next — your hardest task, your full reservoir.
-            </div>
-            <div class="feat-coach-msg">
-              <span class="who mono">EMBER · EVENING</span>
-              Your <b>Spanish</b> reps are due. 25 min, low-friction — knock it out before bed.
-            </div>
-          </div>
-        </div>
-
-        <div class="feat">
-          <div class="feat-ic" aria-hidden="true">🏆</div>
-          <h3>55 achievements</h3>
-          <p>Streak Master. Night Owl. Subject Specialist. The system rewards the habits that actually compound.</p>
-          <div class="feat-mock">
-            <div class="feat-badges">
-              <div class="feat-badge earned">🔥</div>
-              <div class="feat-badge earned">⚡</div>
-              <div class="feat-badge earned">📚</div>
-              <div class="feat-badge earned">🌙</div>
-              <div class="feat-badge earned">🎯</div>
-              <div class="feat-badge locked">🏔</div>
-              <div class="feat-badge earned">⭐</div>
-              <div class="feat-badge earned">💎</div>
-              <div class="feat-badge locked">👑</div>
-              <div class="feat-badge locked">🎓</div>
-              <div class="feat-badge locked">🚀</div>
-              <div class="feat-badge locked">🏆</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="feat wide">
-          <div class="feat-ic" aria-hidden="true">🔥</div>
-          <h3>A streak you'll defend</h3>
-          <p>One missed day breaks it. The dashboard shows it pulsing. You'll feel it.</p>
-          <div class="feat-mock streak-mock">
-            <div class="streak-grid" id="streakcells"></div>
-          </div>
-        </div>
-
-        <div class="feat">
-          <div class="feat-ic arc" aria-hidden="true">☑</div>
-          <h3>Homework that talks to your timer</h3>
-          <p>Every task is linked to focus minutes. Drag to "Doing" and the session starts itself.</p>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ HOW IT WORKS ═══ -->
-  <section id="how" class="alt">
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="ita-about alt">
     <div class="wrap">
       <div class="sec-head">
-        <span class="label-mono sec-eyebrow">How it works</span>
-        <h2>Three steps. Then <span class="accent">show up.</span></h2>
-        <p>No 47-tab onboarding. Be in your first session in under 90 seconds.</p>
+        <span class="label-mono sec-eyebrow">About</span>
+        <h2>Small team.<br/>Strong opinions.</h2>
       </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num mono">STEP 01</div>
-          <h3>Drop in your homework</h3>
-          <p>Paste your syllabus, upload a photo, or just type it in. We'll auto-tag it by subject and estimate the time.</p>
-          <div class="step-arrow" aria-hidden="true">→</div>
+      <div class="ita-about-grid">
+        <div class="ita-about-block">
+          <div class="ita-about-num mono">01</div>
+          <h3>Tools that compound</h3>
+          <p>We build software that gets better the more you use it. Habits that stick. Workflows that pay off.</p>
         </div>
-        <div class="step">
-          <div class="step-num mono">STEP 02</div>
-          <h3>Let the coach plan</h3>
-          <p>Ember slots each task into your peak focus windows. Your hardest task lands when you're sharpest.</p>
-          <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="ita-about-block">
+          <div class="ita-about-num mono">02</div>
+          <h3>No dark patterns</h3>
+          <p>No streak guilt-trips. No engagement loops designed to waste your time. We optimize for your outcomes, not our metrics.</p>
         </div>
-        <div class="step">
-          <div class="step-num mono">STEP 03</div>
-          <h3>Start forging</h3>
-          <p>Hit play. Watch the heat-bar fill. Earn XP. Compound a streak. Repeat tomorrow.</p>
+        <div class="ita-about-block">
+          <div class="ita-about-num mono">03</div>
+          <h3>Done over perfect</h3>
+          <p>We ship. We learn. We ship again. Every product is built to be useful from day one and improved in public.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ STATS ═══ -->
-  <section id="stats">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="label-mono sec-eyebrow">The receipts</span>
-        <h2>Numbers that compound.</h2>
-        <p>Every signup adds to a community of students taking the work seriously. Here's the scoreboard.</p>
-      </div>
-      <div class="stats-card">
-        <div class="stat-big">
-          <div class="stat-big-num mono">50<span class="u">K+</span></div>
-          <div class="stat-big-lbl">Students<br/>showing up</div>
-        </div>
-        <div class="stat-big">
-          <div class="stat-big-num mono">3.2<span class="u">M</span></div>
-          <div class="stat-big-lbl">Pomodoros<br/>completed</div>
-        </div>
-        <div class="stat-big">
-          <div class="stat-big-num mono">14<span class="u">d</span></div>
-          <div class="stat-big-lbl">Avg active<br/>streak</div>
-        </div>
-        <div class="stat-big">
-          <div class="stat-big-num mono">4.8<span class="u">★</span></div>
-          <div class="stat-big-lbl">Rating across<br/>iOS &amp; Android</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ FAQ ═══ -->
-  <section id="faq" class="alt">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="label-mono sec-eyebrow">Questions</span>
-        <h2>Honest answers.</h2>
-      </div>
-      <div class="faq-grid">
-        <details class="faq">
-          <summary><span>Is it really free?</span><span class="faq-mark" aria-hidden="true">+</span></summary>
-          <p>Yes. No card, no trial timer, no surprise paywall. We may add an optional pro tier later, but the core — Pomodoro, homework, AI coach, streaks, achievements — stays free forever.</p>
-        </details>
-        <details class="faq">
-          <summary><span>What's "Ember"?</span><span class="faq-mark" aria-hidden="true">+</span></summary>
-          <p>Ember is the AI coach. It learns when you actually focus, what subjects drain you, and slots tasks into your peak windows. Less generic productivity advice, more "you ship 88% of your hard work before noon — let's protect that."</p>
-        </details>
-        <details class="faq">
-          <summary><span>Will it work without an account?</span><span class="faq-mark" aria-hidden="true">+</span></summary>
-          <p>You can try the timer in guest mode. To save streaks, sync homework, or earn XP, you'll want to sign up — takes about 30 seconds.</p>
-        </details>
-        <details class="faq">
-          <summary><span>Does it integrate with Google Classroom?</span><span class="faq-mark" aria-hidden="true">+</span></summary>
-          <p>Paste a syllabus, photograph an assignment, or import a Google Doc — Focus Forge auto-tags by subject and estimates time. Direct Google Classroom sync is on the roadmap for this term.</p>
-        </details>
-        <details class="faq">
-          <summary><span>Who's behind it?</span><span class="faq-mark" aria-hidden="true">+</span></summary>
-          <p>Focus Forge is a product by <b>itathya</b> — a small studio building tools for people who want to take their work seriously. Reach us at hello@itathya.com.</p>
-        </details>
       </div>
     </div>
   </section>
@@ -329,14 +135,13 @@
   <section class="cta-section">
     <div class="wrap">
       <div class="cta-block">
-        <span class="label-mono cta-eyebrow">START TODAY</span>
-        <h2>The forge is hot.<br/><span class="accent">Step in.</span></h2>
-        <p>Free forever. No card. No nonsense. Be in your first session in 90 seconds.</p>
+        <span class="label-mono cta-eyebrow">GET IN TOUCH</span>
+        <h2>Building something?<br/><span class="accent">Let's talk.</span></h2>
+        <p>Working on a tool, want to collaborate, or just have feedback &mdash; we're listening.</p>
         <div class="row">
-          <a href="https://focusforge.in" class="btn primary lg">Sign up free <span class="arrow" aria-hidden="true">→</span></a>
-          <a href="#features" class="btn lg">See features</a>
+          <a href="mailto:hello@itathya.com" class="btn primary lg">hello@itathya.com <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          <a href="#apps" class="btn lg">See our apps</a>
         </div>
-        <div class="cta-url mono">focusforge.in</div>
       </div>
     </div>
   </section>
@@ -345,22 +150,20 @@
   <footer>
     <div class="wrap foot-inner">
       <div class="foot-brand">
-        <span class="brand-mark sm" aria-hidden="true">F</span>
-        <span>Focus<span class="brand-accent">Forge</span></span>
-        <span class="foot-sep" aria-hidden="true">·</span>
-        <span class="foot-by">a product by <a href="https://itathya.com" class="foot-org">itathya</a></span>
-        <span class="foot-sep" aria-hidden="true">·</span>
-        <span class="foot-year mono">© 2026</span>
+        <span class="brand-itathya-mark sm" aria-hidden="true">&middot;</span>
+        <span class="brand-itathya-text">itathya</span>
+        <span class="foot-sep" aria-hidden="true">&middot;</span>
+        <span class="foot-by">a startup building apps</span>
+        <span class="foot-sep" aria-hidden="true">&middot;</span>
+        <span class="foot-year mono">&copy; 2026</span>
       </div>
       <div class="foot-links">
-        <a href="https://focusforge.in">App</a>
+        <a href="#apps">Apps</a>
         <a href="mailto:hello@itathya.com">Contact</a>
-        <a href="/privacy">Privacy</a>
-        <a href="/terms">Terms</a>
+        <a href="/apps/focusforge">FocusForge</a>
       </div>
     </div>
   </footer>
 
-  <script src="main.js" defer></script>
 </body>
 </html>
