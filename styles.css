@@ -1428,3 +1428,515 @@ a.ita-app-card:hover .ita-app-cta .arrow {
   .back-to-itathya { display: none; }
 }
 
+/* ═══════════════════════════════════════════════════
+   STUDIO / itathya — Glacier theme
+   Cool blue palette for the parent brand. Differentiates
+   from FocusForge (warm/ember).
+   ═══════════════════════════════════════════════════ */
+
+body.glacier {
+  background: #0A0F1A;
+  --ink:    #0A0F1A;
+  --ink-2:  #0F1623;
+  --ink-3:  #14213A;
+  --ink-4:  #1E293B;
+  --line:   rgba(255,255,255,0.06);
+  --line-2: rgba(125,211,252,0.18);
+  --glacier:     #38BDF8;
+  --glacier-2:   #7DD3FC;
+  --glacier-3:   #0EA5E9;
+  --glacier-dim: rgba(56,189,248,0.10);
+}
+
+/* Brand: STUDIO / itathya */
+.brand-studio-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.brand-studio {
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  font-weight: 700;
+  color: var(--glacier-2);
+  text-transform: uppercase;
+}
+
+.brand-slash {
+  color: var(--text-mute);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.brand-itathya-text {
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Glacier nav refinement */
+nav.top.glacier-top {
+  background: rgba(10, 15, 26, 0.78);
+  border-bottom: 1px solid rgba(125, 211, 252, 0.08);
+}
+
+/* Glacier button accents */
+.btn.primary.glacier-btn {
+  background: linear-gradient(135deg, var(--glacier-2), var(--glacier));
+  color: var(--ink);
+  border-color: transparent;
+  box-shadow: 0 4px 18px rgba(56, 189, 248, 0.26);
+}
+.btn.primary.glacier-btn:hover {
+  background: linear-gradient(135deg, #BAE6FD, var(--glacier-2));
+}
+
+/* Gradient text utility */
+.glacier .grad {
+  background: linear-gradient(135deg, #BAE6FD 0%, #7DD3FC 30%, #38BDF8 60%, #0EA5E9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Hero ─────────────────────────────────────── */
+.glacier-hero {
+  padding: 80px 0 60px;
+  position: relative;
+}
+
+.glacier-hero-card {
+  position: relative;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 96px 60px 80px;
+  border-radius: 28px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(56, 189, 248, 0.10), transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(14, 165, 233, 0.06), transparent 60%),
+    #0F1623;
+  border: 1px solid var(--line-2);
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.04);
+  text-align: center;
+}
+
+.glacier-hero-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image:
+    linear-gradient(to right, rgba(125,211,252,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(125,211,252,0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
+  mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
+}
+
+.glacier-hero-glow {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(56, 189, 248, 0.16), transparent 65%);
+  pointer-events: none;
+}
+
+.glacier-hero-content { position: relative; }
+
+.glacier-tag {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  color: var(--glacier-2);
+  margin-bottom: 28px;
+  padding: 5px 12px;
+  border-radius: 99px;
+  border: 1px solid rgba(125, 211, 252, 0.22);
+  background: rgba(56, 189, 248, 0.06);
+  font-weight: 700;
+}
+
+.glacier-hero h1 {
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+  margin: 0 0 24px;
+  color: var(--text);
+}
+
+.glacier-hero p.lead {
+  font-size: 17px;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin: 0 auto 40px;
+  max-width: 520px;
+  font-weight: 500;
+}
+
+.glacier-hero .hero-actions {
+  justify-content: center;
+}
+
+/* ── Apps catalog ─────────────────────────────── */
+.glacier-apps {
+  padding: 80px 0 100px;
+  position: relative;
+}
+
+.glacier-section-head {
+  margin-bottom: 48px;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.glacier-section-head.center {
+  text-align: center;
+  max-width: 720px;
+  margin-bottom: 64px;
+}
+
+.glacier-eyebrow {
+  color: var(--glacier-2);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.glacier-section-title {
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.06;
+  margin: 0 0 12px;
+  color: var(--text);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.glacier-section-title.big {
+  font-size: clamp(36px, 4.6vw, 56px);
+  display: block;
+}
+
+.glacier-section-title .dot-end {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--glacier);
+  box-shadow: 0 0 12px var(--glacier);
+  display: inline-block;
+}
+
+.glacier-section-sub {
+  font-size: 16px;
+  color: var(--text-dim);
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.55;
+  max-width: 580px;
+}
+
+.glacier-section-sub.center { margin: 0 auto; }
+
+.glacier-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.glacier-card {
+  display: flex;
+  flex-direction: column;
+  background: #0F1623;
+  border: 1px solid rgba(125, 211, 252, 0.10);
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+a.glacier-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(125, 211, 252, 0.32);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(56, 189, 248, 0.15);
+}
+
+.glacier-card.soon {
+  opacity: 0.85;
+  border-style: dashed;
+}
+
+.glacier-card-art {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: #0A0F1A;
+  border-bottom: 1px solid rgba(125, 211, 252, 0.08);
+  overflow: hidden;
+}
+
+.glacier-card-art svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.glacier-card-status {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 9.5px;
+  letter-spacing: 0.22em;
+  padding: 4px 9px;
+  border-radius: 4px;
+  background: rgba(34, 197, 94, 0.14);
+  color: #4ADE80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  font-weight: 700;
+}
+
+.glacier-card-status.soon {
+  background: rgba(125, 211, 252, 0.08);
+  color: var(--glacier-2);
+  border-color: rgba(125, 211, 252, 0.2);
+}
+
+.glacier-card-body {
+  padding: 26px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.glacier-card-meta {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--text-mute);
+  font-weight: 700;
+}
+
+.glacier-card-body h3 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin: 0;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+.glacier-card-body p {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.glacier-card-stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 4px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.glacier-card-stats .stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.glacier-card-stats .num {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--glacier-2);
+  letter-spacing: -0.01em;
+}
+
+.glacier-card-stats .lbl {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.glacier-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 14px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--glacier-2);
+  letter-spacing: -0.005em;
+}
+
+.glacier-card-cta .arrow { transition: transform 0.2s; }
+a.glacier-card:hover .glacier-card-cta .arrow { transform: translateX(3px); }
+
+.glacier-card-cta.muted {
+  color: var(--text-mute);
+}
+
+.glacier-card-cta.muted a {
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.glacier-card-cta.muted a:hover {
+  color: var(--glacier-2);
+  border-color: var(--glacier-2);
+}
+
+/* ── About / Principles ───────────────────────── */
+.glacier-about {
+  padding: 100px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.012);
+}
+
+.glacier-principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.glacier-principle {
+  padding: 32px 28px;
+  background: #0F1623;
+  border: 1px solid rgba(125, 211, 252, 0.10);
+  border-radius: 16px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.glacier-principle:hover {
+  border-color: rgba(125, 211, 252, 0.24);
+  transform: translateY(-2px);
+}
+
+.glacier-principle-ic {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(56, 189, 248, 0.10);
+  color: var(--glacier-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.glacier-principle-ic svg {
+  width: 20px;
+  height: 20px;
+}
+
+.glacier-principle h3 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  color: var(--text);
+}
+
+.glacier-principle p {
+  font-size: 13.5px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Voice / Architecture ─────────────────────── */
+.glacier-voice {
+  padding: 100px 0;
+}
+
+.glacier-voice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.glacier-voice-copy h2 {
+  margin-bottom: 24px;
+}
+
+.glacier-voice-copy p {
+  font-size: 15px;
+  color: var(--text-dim);
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.glacier-voice-cta {
+  margin-top: 28px;
+}
+
+.glacier-voice-art {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(125, 211, 252, 0.14);
+  aspect-ratio: 4 / 3;
+  background: #0A0F1A;
+}
+
+.glacier-voice-art svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Footer ───────────────────────────────────── */
+footer.glacier-footer {
+  border-top: 1px solid rgba(125, 211, 252, 0.08);
+  padding: 36px 0;
+}
+
+footer.glacier-footer .foot-brand .foot-by.mono {
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ── Responsive ───────────────────────────────── */
+@media (max-width: 900px) {
+  .glacier-hero { padding: 56px 0 40px; }
+  .glacier-hero-card { padding: 64px 28px 56px; border-radius: 22px; }
+  .glacier-grid { grid-template-columns: 1fr; }
+  .glacier-principles { grid-template-columns: 1fr; }
+  .glacier-voice-grid { grid-template-columns: 1fr; gap: 32px; }
+  .glacier-apps { padding: 60px 0 70px; }
+  .glacier-about, .glacier-voice { padding: 64px 0; }
+  .glacier-card-body { padding: 22px; }
+  .glacier-card-stats { gap: 18px; }
+}
+
+
