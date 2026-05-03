@@ -1652,11 +1652,18 @@ nav.top.glacier-top {
 .glacier-section-sub.center { margin: 0 auto; }
 
 .glacier-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 22px;
   max-width: 1080px;
   margin: 0 auto;
+}
+
+.glacier-grid > .glacier-card {
+  flex: 1 1 380px;
+  max-width: 540px;
+  min-width: 0;
 }
 
 .glacier-card {
